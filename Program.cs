@@ -57,11 +57,5 @@ class Program
             string resultado = await WeatherServices.ObterClimaAsync(cidade);
             await message.Channel.SendMessageAsync(resultado);
         }
-
-        if (message.Content.ToLower().StartsWith("!ex"))
-        {
-            await message.Channel.SendMessageAsync("Tua ex ta mamando!!");
-            return;
-        }
     }
 }
